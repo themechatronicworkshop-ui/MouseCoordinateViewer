@@ -7,7 +7,23 @@
 ![Mouse Coordinate Viewer uygulama ekranı](images/ekran-goruntusu.png)
 
 
-Windows üzerinde fare imlecinin **X ve Y koordinatlarını anlık olarak gösteren**, küçük ve taşınabilir bir masaüstü uygulamasıdır.
+## Projenin amacı
+
+**Mouse Coordinate Viewer**, Windows üzerinde fare imlecinin X ve Y koordinatlarını gerçek zamanlı gösteren, ekran koordinatlarına dayalı otomasyon çalışmalarını kolaylaştıran hafif bir yardımcı yazılımdır.
+
+Özellikle sanal fare ve klavye kontrolü, otomatik tıklama, dosya ve klasör taşıma iş akışları, tekrarlanan masaüstü görevleri ve kullanıcı arayüzü testleri gibi projelerde **hedef noktaların koordinatlarını belirlemek** için kullanılabilir.
+
+Program, geliştiricilerin tıklanacak düğmelerin, sürükleme başlangıç ve bitiş noktalarının ve ekran üzerindeki işlem alanlarının konumlarını tespit etmesine yardımcı olur. **Önemli:** Uygulama tek başına otomatik tıklama, klavye girişi veya dosya taşıma yapmaz; bu tür otomasyonları geliştirmek için koordinat bilgisi sağlar.
+
+### Kullanım alanları
+
+- **Sanal fare ve klavye otomasyonu:** Fare hareketi ve tıklama hedeflerinin koordinatlarını bulma.
+- **Dosya ve klasör iş akışları:** Sürükle-bırak gibi ekran tabanlı işlemlerde başlangıç ve hedef noktalarını belirleme.
+- **Masaüstü otomasyonu:** Tekrarlanan görevler için ekran üzerindeki kontrol noktalarını saptama.
+- **Arayüz testleri:** Düğme, menü ve diğer ekran öğelerinin konumlarını inceleme.
+- **Eğitim ve geliştirme:** Ekran koordinat sistemini öğrenme ve otomasyon prototipleri oluşturma.
+
+**Teknik not:** Ekran çözünürlüğü, pencere konumu, ölçeklendirme ve çoklu monitör düzeni değiştiğinde koordinatlar da değişebilir. Sabit koordinatlarla çalışan otomasyonlarda bu koşullar göz önünde bulundurulmalıdır.
 
 ## Özellikler
 
