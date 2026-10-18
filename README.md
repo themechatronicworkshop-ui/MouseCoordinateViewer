@@ -1,28 +1,56 @@
-# Mouse Coordinate Viewer
+# Mouse Coordinate Viewer — Fare Koordinat Gösterici
 
-A small, portable Windows utility that displays live mouse coordinates in an always-on-top window.
+Windows üzerinde fare imlecinin **X ve Y koordinatlarını anlık olarak gösteren**, küçük ve taşınabilir bir masaüstü uygulamasıdır.
 
-## Use
+## Özellikler
 
-Build the executable using **build.cmd**, then run **MouseCoordinateViewer.exe**. On startup, the pointer moves to the center of your primary screen. Move your mouse normally to see its current X and Y coordinates. Click **Center on primary screen** to center it again, or close the window to exit.
+- Fare imlecinin X ve Y koordinatlarını canlı gösterir.
+- Pencere diğer pencerelerin üzerinde kalır.
+- Birincil ekranın çözünürlüğünü otomatik algılar.
+- **Center on primary screen** düğmesiyle imleci ana ekranın merkezine taşır.
+- Windows ekran ölçeklendirmesinde fiziksel piksel koordinatlarını kullanır.
+- Kurulum veya yönetici izni gerektirmez.
 
-- Detects your primary screen resolution automatically.
-- Uses physical pixel coordinates, including when Windows display scaling is enabled.
-- On a 1920 × 1080 primary screen, the center is (960, 540).
-- On a 1280 × 1024 primary screen, the center is (640, 512).
-- Coordinates on other screens can be negative.
-- No installer or administrator access required.
+## İndirme ve çalıştırma
 
-Requires Windows with .NET Framework 4.x, normally included with Windows 10 and 11. After building, only the EXE is needed to run the utility. The compiled EXE is not included in this source repository.
+1. Depodaki `MouseCoordinateViewer.exe` dosyasını indirin (dosya depoya eklendiğinde).
+2. Windows bilgisayarınızda dosyayı çalıştırın.
+3. Açılışta imleç ana ekranın merkezine taşınır.
+4. Fareyi hareket ettirdikçe X ve Y koordinatları güncellenir.
+5. Programı kapatmak için pencereyi kapatın.
 
-## Build from source
+**Not:** EXE henüz bu GitHub deposunda yayımlanmış değildir. Kaynak kodu indirip aşağıdaki yöntemle derleyebilirsiniz.
 
-Run `build.cmd` on Windows. It uses the .NET Framework C# compiler and the included manifest to produce `MouseCoordinateViewer.exe`.
+## Kaynak koddan derleme
 
-Source: `MouseCoordinateViewer.cs`.
+1. Depoyu **Code → Download ZIP** seçeneğiyle indirin ve ZIP'i açın.
+2. Windows'ta `build.cmd` dosyasını çalıştırın.
+3. Derleme başarılı olursa `MouseCoordinateViewer.exe` oluşturulur.
 
-## Verification
+Gereksinim: Windows ve .NET Framework 4.x C# derleyicisi. Derleme için Visual Studio zorunlu değildir; gerekli derleyicinin sistemde bulunması gerekir.
 
-The English version compiles successfully. The original version passed its primary-screen and cursor-reading self-test. The English interface has not been visually checked.
+## Örnek
 
-The utility moves the pointer once at startup and when the center button is clicked. It does not click, drag, or modify files.
+1920 × 1080 çözünürlüklü bir ana ekranda merkez yaklaşık **X: 960, Y: 540** koordinatıdır. 1280 × 1024 ekranda merkez **X: 640, Y: 512** olur. Birden fazla ekran kullanıldığında bazı koordinatlar negatif olabilir.
+
+## Dosyalar
+
+| Dosya | Açıklama |
+|---|---|
+| `MouseCoordinateViewer.cs` | C# uygulama kaynak kodu |
+| `MouseCoordinateViewer.manifest` | Windows uygulama bildirimi ve DPI ayarı |
+| `build.cmd` | Windows derleme betiği |
+| `.gitignore` | Git tarafından yok sayılacak dosyalar |
+| `README.md` | Türkçe proje tanıtımı ve kullanım kılavuzu |
+
+## Test durumu
+
+İngilizce arayüzlü sürümün derlendiği ve özgün sürümün imleç okuma/ekran merkezi testinden geçtiği bildirilmiştir. Arayüzün Windows üzerinde görsel doğrulaması yapılmamıştır. Bu depoda ayrıca otomatik test altyapısı bulunmamaktadır.
+
+## Güvenlik ve davranış
+
+Program başlangıçta ve merkezleme düğmesine basıldığında fare imlecini taşır. Fare tıklaması yapmaz, dosyaları değiştirmez ve yönetici izni istemez.
+
+## Lisans
+
+Bu depoda henüz bir lisans dosyası bulunmamaktadır. Kullanım, değiştirme ve yeniden dağıtım haklarını açıkça belirtmek için ayrıca bir lisans seçilmelidir.
