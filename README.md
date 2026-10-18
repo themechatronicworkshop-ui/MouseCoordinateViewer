@@ -1,5 +1,7 @@
 # Mouse Coordinate Viewer — Fare Koordinat Gösterici
 
+🇹🇷 **Türkçe (Ana Dil)** | 🇬🇧 **[English documentation](README_EN.md)**
+
 Windows üzerinde fare imlecinin **X ve Y koordinatlarını anlık olarak gösteren**, küçük ve taşınabilir bir masaüstü uygulamasıdır.
 
 ## Özellikler
