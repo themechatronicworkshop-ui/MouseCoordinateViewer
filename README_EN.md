@@ -20,7 +20,7 @@ Typical use cases include virtual mouse and keyboard workflows, automated clicki
 
 ## Application screenshot
 
-![Mouse Coordinate Viewer screenshot](images/ekran-goruntusu.png)
+![Mouse Coordinate Viewer screenshot](1.png)
 
 **Language:** This is the English documentation. [Türkçe ana sayfaya dön / Back to Turkish](README.md).
 
