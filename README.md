@@ -4,7 +4,7 @@
 
 ## Uygulama ekran görüntüsü
 
-![Mouse Coordinate Viewer uygulama ekranı](images/ekran-goruntusu.png)
+![Mouse Coordinate Viewer uygulama ekranı](1.png)
 
 
 ## Projenin amacı
