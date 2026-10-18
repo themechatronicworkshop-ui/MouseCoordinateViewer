@@ -2,6 +2,11 @@
 
 🇹🇷 **Türkçe (Ana Dil)** | 🇬🇧 **[English documentation](README_EN.md)**
 
+## Uygulama ekran görüntüsü
+
+![Mouse Coordinate Viewer uygulama ekranı](images/ekran-goruntusu.png)
+
+
 Windows üzerinde fare imlecinin **X ve Y koordinatlarını anlık olarak gösteren**, küçük ve taşınabilir bir masaüstü uygulamasıdır.
 
 ## Özellikler
