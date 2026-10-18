@@ -1,6 +1,22 @@
 # Mouse Coordinate Viewer
 
-A lightweight, portable Windows application that displays your mouse pointer's **X and Y coordinates in real time**.
+## Project purpose
+
+**Mouse Coordinate Viewer** is a lightweight Windows utility that displays the mouse pointer's X and Y screen coordinates in real time. It helps developers identify precise screen positions for coordinate-based desktop automation.
+
+Typical use cases include virtual mouse and keyboard workflows, automated clicking, file and folder drag-and-drop workflows, repetitive desktop tasks, and user interface testing. It can help locate button positions, cursor movement targets, and the start and end points of drag operations.
+
+**Important:** The application does **not** perform automated clicks, keyboard input, or file transfers itself. It provides coordinate information that can be used when building those automation tools.
+
+### Use cases
+
+- **Mouse and keyboard automation:** Identify pointer movement and click targets.
+- **File and folder workflows:** Find start and destination points for screen-based drag-and-drop operations.
+- **Desktop automation:** Map interface control points for repetitive tasks.
+- **UI testing:** Inspect the locations of buttons, menus, and other interface elements.
+- **Learning and development:** Explore screen coordinate systems and prototype automation workflows.
+
+**Technical note:** Coordinates may change with display resolution, window positions, display scaling, or multi-monitor layout. Coordinate-based automation should account for these changes.
 
 ## Application screenshot
 
