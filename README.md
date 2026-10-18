@@ -4,7 +4,7 @@ A small, portable Windows utility that displays live mouse coordinates in an alw
 
 ## Use
 
-Run **MouseCoordinateViewer.exe**. On startup, the pointer moves to the center of your primary screen. Move your mouse normally to see its current X and Y coordinates. Click **Center on primary screen** to center it again, or close the window to exit.
+Build the executable using **build.cmd**, then run **MouseCoordinateViewer.exe**. On startup, the pointer moves to the center of your primary screen. Move your mouse normally to see its current X and Y coordinates. Click **Center on primary screen** to center it again, or close the window to exit.
 
 - Detects your primary screen resolution automatically.
 - Uses physical pixel coordinates, including when Windows display scaling is enabled.
@@ -13,7 +13,7 @@ Run **MouseCoordinateViewer.exe**. On startup, the pointer moves to the center o
 - Coordinates on other screens can be negative.
 - No installer or administrator access required.
 
-Requires Windows with .NET Framework 4.x, normally included with Windows 10 and 11. Only the EXE is needed to run the utility.
+Requires Windows with .NET Framework 4.x, normally included with Windows 10 and 11. After building, only the EXE is needed to run the utility. The compiled EXE is not included in this source repository.
 
 ## Build from source
 
