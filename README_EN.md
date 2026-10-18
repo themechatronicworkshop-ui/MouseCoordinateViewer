@@ -2,6 +2,10 @@
 
 A lightweight, portable Windows application that displays your mouse pointer's **X and Y coordinates in real time**.
 
+## Application screenshot
+
+![Mouse Coordinate Viewer screenshot](images/ekran-goruntusu.png)
+
 **Language:** This is the English documentation. [Türkçe ana sayfaya dön / Back to Turkish](README.md).
 
 ## Features
